@@ -1,0 +1,4 @@
+# initialization file for non-contiguous recombination.
+
+Number of blocks = 8
+Find all PDB structures = 0
