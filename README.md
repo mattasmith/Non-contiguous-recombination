@@ -9,6 +9,7 @@ SCHEMA and non-contiguous recombination were developed in the laboratory of Fran
 
 
 Contents
+============================
 
 1. References
 2. Installation
@@ -20,13 +21,15 @@ Contents
 
 
 1. References
+============================
 
 Smith, M. et al., Chimeragenesis of distantly-related proteins by non-contiguous recombination, Protein Science 22(2):231-238 (2013).
 Voigt, C. et al., Protein building blocks preserved by recombination, Nature Structural Biology 9(7):553-558 (2002).
 
 This script uses George Karypis' hmetis graph partitioning algorithm:
 
-Karypis, G. et al. Multilevel Hypergraph Partitioning: Applications in VLSI Domain, 34th Design and Automation Conference, 526-529, (1997)Karypis, G. et al. Multilevel k-way Hypergraph Partitioning, 36th Design Automation Conference, 343-348, 1999.
+Karypis, G. et al. Multilevel Hypergraph Partitioning: Applications in VLSI Domain, 34th Design and Automation Conference, 526-529, (1997)
+Karypis, G. et al. Multilevel k-way Hypergraph Partitioning, 36th Design Automation Conference, 343-348, 1999.
 
 And Robert Edgar's MUSCLE alignment program:
 
@@ -34,6 +37,7 @@ Edgar, R.C. MUSCLE: multiple sequence alignment with high accuracy and high thro
 
 
 2. Installation
+============================
 
 Non-contiguous recombination is written in python 2.6 (www.python.org). 
 It uses two external programs: MUSCLE and hmetis.
@@ -46,6 +50,7 @@ It should be unpacked and the hmetis folder placed in tools
 
 
 3. Setup
+============================
 
 The init.txt file specifies the parameters to be used by the non-contiguous recombination script.
 
@@ -55,6 +60,7 @@ Find all PDB structures - the script should search the PDB database for structur
 
 
 4. Execution
+============================
 
 Run: 
 python ncr.py
@@ -65,6 +71,7 @@ where libraryX is the name of the given library (e.g. library12_2)
 
 
 5. Output
+============================
 
 ncr.py will create a set of library designs in a directory 'output'. Residues (numbered by  the alignment) are assigned to a block by the letters A,B,C,D, etc. Conserved residues (and residues with no SCHEMA contacts) are represented by '-'.
 
@@ -72,6 +79,7 @@ The script will also create a .csv file that contains the average SCHEMA E and a
 
 
 6. Things to be careful about
+============================
 
 * A good sequence alignment is essential. Structural information can help alignments if the sequence identity is not that high. 
 
